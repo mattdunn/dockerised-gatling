@@ -2,11 +2,11 @@
 
 Inside the docker container, this repositories files are shared under /app
 
+Gatling will write its reports to the /app/results folder which is then accessible from the host
+
 ## Dependencies
 
-### If using Docker container (optional)
-
-- docker
+- docker-machine
 - docker-compose
 
 ## How to
@@ -22,3 +22,5 @@ Inside the docker container, this repositories files are shared under /app
 - run Gatling inside container
 
   `gatling.sh -sf /app -rf /app/results`
+
+- [other useful command line options](http://gatling.io/docs/1.5.6/user_documentation/reference/configuration.html#command-line-options) for Gatling, particularly -sf for changing where to look for simulations
